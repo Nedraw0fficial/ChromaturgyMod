@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "chromaturgy:block/pigment_station_side_north",
+    "down": "chromaturgy:block/pigment_station_bottom",
+    "up": "chromaturgy:block/pigment_station_top",
+    "north": "chromaturgy:block/pigment_station_side_north",
+    "south": "chromaturgy:block/pigment_station_side_south",
+    "east": "chromaturgy:block/pigment_station_side_east",
+    "west": "chromaturgy:block/pigment_station_side_west"
+  }
+}

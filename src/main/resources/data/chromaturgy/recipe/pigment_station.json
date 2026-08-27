@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DD",
+    "WW",
+    "PP"
+  ],
+  "key": {
+    "D": "#minecraft:dyes",
+    "W": "#minecraft:wool",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "chromaturgy:pigment_station",
+    "count": 1
+  }
+}

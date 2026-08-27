@@ -1,0 +1,16 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:item/turquoise_dye",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -1
+      },
+      {
+        "type": "minecraft:constant",
+        "value": -12525360
+      }
+    ]
+  }
+}
