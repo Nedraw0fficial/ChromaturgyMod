@@ -18,6 +18,9 @@ public final class ChromaturgyRecipeSerializers {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableFireworkStarRecipe>> DYEABLE_FIREWORK_STAR =
             RECIPE_SERIALIZERS.register("dyeable_firework_star", () -> DyeableFireworkStarRecipe.SERIALIZER);
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableWoolRecipe>> DYEABLE_WOOL =
+            RECIPE_SERIALIZERS.register("dyeable_wool", () -> DyeableWoolRecipe.SERIALIZER);
+
     private ChromaturgyRecipeSerializers() {}
 
     public static void register(IEventBus modEventBus) {
