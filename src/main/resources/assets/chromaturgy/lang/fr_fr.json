@@ -1,7 +1,8 @@
 {
   "itemGroup.chromaturgy": "Chromaturgie",
 
-  "block.chromaturgy.pigment_station": "Établi à Pigments",
+  "block.chromaturgy.pigment_station": "Station de Pigmentation",
+  "item.chromaturgy.swatch_card": "Nuancier",
 
   "item.chromaturgy.vermilion_dye": "Teinture Vermillon",
   "item.chromaturgy.crimson_dye": "Teinture Cramoisi",

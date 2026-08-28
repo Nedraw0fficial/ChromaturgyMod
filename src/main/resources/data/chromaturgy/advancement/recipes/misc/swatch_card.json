@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_paper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": "minecraft:paper" }]
+      }
+    },
+    "has_honeycomb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": "minecraft:honeycomb" }]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chromaturgy:swatch_card"
+      }
+    }
+  },
+  "requirements": [
+    ["has_paper", "has_honeycomb", "has_the_recipe"]
+  ],
+  "rewards": {
+    "recipes": ["chromaturgy:swatch_card"]
+  }
+}

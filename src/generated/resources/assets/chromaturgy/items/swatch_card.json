@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chromaturgy:item/pigment_station"
+    "model": "chromaturgy:item/swatch_card"
   }
 }

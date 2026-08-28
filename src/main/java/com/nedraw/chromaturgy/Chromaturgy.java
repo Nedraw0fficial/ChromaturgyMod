@@ -1,5 +1,7 @@
 package com.nedraw.chromaturgy;
 
+import com.nedraw.chromaturgy.datagen.ChromaturgyModelProvider;
+import net.minecraft.data.PackOutput;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -13,6 +15,7 @@ import com.nedraw.chromaturgy.registry.ChromaturgyBlocks;
 import com.nedraw.chromaturgy.registry.ColorDefinitions;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import com.nedraw.chromaturgy.registry.ChromaturgyCreativeTabs;
+import com.nedraw.chromaturgy.datagen.ChromaturgyItemTagsProvider;
 
 @Mod(Chromaturgy.MODID)
 public class Chromaturgy {
@@ -28,9 +31,11 @@ public class Chromaturgy {
         ChromaturgyBlocks.register(modEventBus);
         ChromaturgyCreativeTabs.register(modEventBus);
 
-
-        modEventBus.addListener((GatherDataEvent.Client event) ->
-                event.createProvider(com.nedraw.chromaturgy.datagen.ChromaturgyModelProvider::new));
+        modEventBus.addListener((GatherDataEvent.Client event) -> {
+            event.createProvider(ChromaturgyModelProvider::new);
+            event.createProvider((PackOutput output) ->
+                    new ChromaturgyItemTagsProvider(output, event.getLookupProvider()));
+        });
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
