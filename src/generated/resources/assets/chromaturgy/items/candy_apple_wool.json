@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/candy_apple_wool",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -63488
+      }
+    ]
+  }
+}

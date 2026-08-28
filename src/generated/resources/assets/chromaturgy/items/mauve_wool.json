@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/mauve_wool",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -2051841
+      }
+    ]
+  }
+}

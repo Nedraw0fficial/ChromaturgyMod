@@ -4,6 +4,7 @@ import com.nedraw.chromaturgy.Chromaturgy;
 import com.nedraw.chromaturgy.ChromaturgyDyeColor;
 import com.nedraw.chromaturgy.registry.ChromaturgyBlocks;
 import com.nedraw.chromaturgy.registry.ChromaturgyItems;
+import com.nedraw.chromaturgy.registry.ChromaturgyWoolBlocks;
 import com.nedraw.chromaturgy.registry.ColorDefinitions;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -26,6 +27,12 @@ public class ChromaturgyModelProvider extends ModelProvider {
             Optional.of(Identifier.withDefaultNamespace("item/generated")),
             Optional.empty(),
             TextureSlot.LAYER0, TextureSlot.LAYER1
+    );
+
+    private static final ModelTemplate TINTED_CUBE_ALL = new ModelTemplate(
+            Optional.of(Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "block/tinted_cube_all")),
+            Optional.empty(),
+            TextureSlot.ALL
     );
 
     public ChromaturgyModelProvider(PackOutput output) {
@@ -87,6 +94,24 @@ public class ChromaturgyModelProvider extends ModelProvider {
                         )
                 );
             }
+        }
+
+        Identifier vanillaWoolTexture = Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "block/wool_template");
+
+        for (ChromaturgyDyeColor color : ColorDefinitions.all()) {
+            Block woolBlock = ChromaturgyWoolBlocks.getWool(color.id()).get();
+
+            Identifier woolModel = TINTED_CUBE_ALL.create(
+                    woolBlock,
+                    new TextureMapping().put(TextureSlot.ALL, new Material(vanillaWoolTexture)),
+                    blockModels.modelOutput
+            );
+
+            blockModels.blockStateOutput.accept(
+                    BlockModelGenerators.createSimpleBlock(woolBlock, BlockModelGenerators.plainVariant(woolModel))
+            );
+
+            blockModels.registerSimpleTintedItemModel(woolBlock, woolModel, ItemModelUtils.constantTint(0xFF000000 | color.hex()));
         }
     }
 }

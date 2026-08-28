@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/royal_blue_wool",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -12490271
+      }
+    ]
+  }
+}

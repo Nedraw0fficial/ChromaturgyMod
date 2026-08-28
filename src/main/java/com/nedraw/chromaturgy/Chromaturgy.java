@@ -19,6 +19,9 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import com.nedraw.chromaturgy.registry.ChromaturgyCreativeTabs;
 import com.nedraw.chromaturgy.datagen.ChromaturgyItemTagsProvider;
 import com.nedraw.chromaturgy.menu.ChromaturgyMenuTypes;
+import com.nedraw.chromaturgy.recipe.ChromaturgyRecipeSerializers;
+import com.nedraw.chromaturgy.registry.ChromaturgyWoolBlocks;
+import com.nedraw.chromaturgy.datagen.ChromaturgyBlockColors;
 
 @Mod(Chromaturgy.MODID)
 public class Chromaturgy {
@@ -32,11 +35,15 @@ public class Chromaturgy {
         ColorDefinitions.load();
         ChromaturgyItems.register(modEventBus);
         ChromaturgyBlocks.register(modEventBus);
+        ChromaturgyWoolBlocks.register(modEventBus);
         ChromaturgyCreativeTabs.register(modEventBus);
         ChromaturgyMenuTypes.register(modEventBus);
+        ChromaturgyRecipeSerializers.register(modEventBus);
 
         modEventBus.addListener((RegisterMenuScreensEvent event) ->
                 event.register(ChromaturgyMenuTypes.PIGMENT_STATION.get(), PigmentStationScreen::new));
+
+        modEventBus.addListener(ChromaturgyBlockColors::register);
 
         modEventBus.addListener((GatherDataEvent.Client event) -> {
             event.createProvider(ChromaturgyModelProvider::new);

@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/bubblegum_wool",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -15924
+      }
+    ]
+  }
+}

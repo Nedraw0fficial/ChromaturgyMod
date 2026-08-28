@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/sage_wool",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -6508664
+      }
+    ]
+  }
+}

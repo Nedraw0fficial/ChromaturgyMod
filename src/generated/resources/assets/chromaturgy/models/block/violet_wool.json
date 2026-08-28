@@ -1,0 +1,6 @@
+{
+  "parent": "chromaturgy:block/tinted_cube_all",
+  "textures": {
+    "all": "chromaturgy:block/wool_template"
+  }
+}
