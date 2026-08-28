@@ -189,7 +189,7 @@
     "id": "vermilion",
     "hex": "#E34234",
     "translation_key": "item.chromaturgy.vermilion_dye",
-    "custom_texture": true
+    "custom_texture": false
   },
   {
     "id": "copper",

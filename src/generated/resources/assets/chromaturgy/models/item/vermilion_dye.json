@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chromaturgy:item/vermilion_dye"
+    "layer0": "chromaturgy:item/dye_paper",
+    "layer1": "chromaturgy:item/dye_placeholder"
   }
 }

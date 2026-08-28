@@ -18,10 +18,18 @@ public final class ChromaturgyCreativeTabs {
             CREATIVE_MODE_TABS.register("chromaturgy_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.chromaturgy"))
                     .withTabsBefore(CreativeModeTabs.COMBAT)
-                    .icon(() -> ChromaturgyItems.getDye("vermilion").get().getDefaultInstance())
+                    .icon(() -> ChromaturgyBlocks.PIGMENT_STATION_ITEM.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
                         output.accept(ChromaturgyBlocks.PIGMENT_STATION_ITEM.get());
-                        for (var color : ColorDefinitions.all()) {
+                        output.accept(ChromaturgyItems.SWATCH_CARD.get());
+
+                        java.util.List<com.nedraw.chromaturgy.ChromaturgyDyeColor> sorted =
+                                new java.util.ArrayList<>(ColorDefinitions.all());
+                        sorted.sort(java.util.Comparator.comparingDouble(
+                                c -> com.nedraw.chromaturgy.menu.ColorLookup.rgbToHsl(c.red(), c.green(), c.blue())[0]
+                        ));
+
+                        for (com.nedraw.chromaturgy.ChromaturgyDyeColor color : sorted) {
                             output.accept(ChromaturgyItems.getDye(color.id()).get());
                         }
                     })
