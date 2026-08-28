@@ -1,7 +1,9 @@
 package com.nedraw.chromaturgy;
 
 import com.nedraw.chromaturgy.datagen.ChromaturgyModelProvider;
+import com.nedraw.chromaturgy.menu.PigmentStationScreen;
 import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -16,6 +18,7 @@ import com.nedraw.chromaturgy.registry.ColorDefinitions;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import com.nedraw.chromaturgy.registry.ChromaturgyCreativeTabs;
 import com.nedraw.chromaturgy.datagen.ChromaturgyItemTagsProvider;
+import com.nedraw.chromaturgy.menu.ChromaturgyMenuTypes;
 
 @Mod(Chromaturgy.MODID)
 public class Chromaturgy {
@@ -30,6 +33,10 @@ public class Chromaturgy {
         ChromaturgyItems.register(modEventBus);
         ChromaturgyBlocks.register(modEventBus);
         ChromaturgyCreativeTabs.register(modEventBus);
+        ChromaturgyMenuTypes.register(modEventBus);
+
+        modEventBus.addListener((RegisterMenuScreensEvent event) ->
+                event.register(ChromaturgyMenuTypes.PIGMENT_STATION.get(), PigmentStationScreen::new));
 
         modEventBus.addListener((GatherDataEvent.Client event) -> {
             event.createProvider(ChromaturgyModelProvider::new);

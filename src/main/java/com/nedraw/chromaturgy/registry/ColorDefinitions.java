@@ -37,7 +37,6 @@ public final class ColorDefinitions {
                 JsonObject obj = element.getAsJsonObject();
                 loaded.add(ChromaturgyDyeColor.of(
                         obj.get("id").getAsString(),
-                        obj.get("display_family").getAsString(),
                         obj.get("hex").getAsString(),
                         obj.get("translation_key").getAsString(),
                         obj.get("custom_texture").getAsBoolean()

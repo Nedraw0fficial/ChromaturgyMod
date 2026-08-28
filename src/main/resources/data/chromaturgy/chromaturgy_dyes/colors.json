@@ -1,751 +1,644 @@
 [
   {
-    "id": "vermilion",
-    "display_family": "Reds & Crimsons",
-    "hex": "#E34234",
-    "translation_key": "item.chromaturgy.vermilion_dye",
-    "custom_texture": true
-  },
-  {
-    "id": "crimson",
-    "display_family": "Reds & Crimsons",
-    "hex": "#DC143C",
-    "translation_key": "item.chromaturgy.crimson_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "scarlet",
-    "display_family": "Reds & Crimsons",
-    "hex": "#FF2400",
-    "translation_key": "item.chromaturgy.scarlet_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "ruby",
-    "display_family": "Reds & Crimsons",
-    "hex": "#9B111E",
-    "translation_key": "item.chromaturgy.ruby_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "carmine",
-    "display_family": "Reds & Crimsons",
-    "hex": "#960018",
-    "translation_key": "item.chromaturgy.carmine_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "brick_red",
-    "display_family": "Reds & Crimsons",
-    "hex": "#B22222",
-    "translation_key": "item.chromaturgy.brick_red_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "cardinal",
-    "display_family": "Reds & Crimsons",
-    "hex": "#C41E3A",
-    "translation_key": "item.chromaturgy.cardinal_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "wine",
-    "display_family": "Reds & Crimsons",
-    "hex": "#722F37",
-    "translation_key": "item.chromaturgy.wine_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "blood_red",
-    "display_family": "Reds & Crimsons",
-    "hex": "#660000",
-    "translation_key": "item.chromaturgy.blood_red_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "cherry",
-    "display_family": "Reds & Crimsons",
-    "hex": "#DE3163",
-    "translation_key": "item.chromaturgy.cherry_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "rose",
-    "display_family": "Pinks & Roses",
-    "hex": "#FF007F",
-    "translation_key": "item.chromaturgy.rose_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "salmon",
-    "display_family": "Pinks & Roses",
-    "hex": "#FA8072",
-    "translation_key": "item.chromaturgy.salmon_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "coral",
-    "display_family": "Pinks & Roses",
-    "hex": "#FF7F50",
-    "translation_key": "item.chromaturgy.coral_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "flamingo",
-    "display_family": "Pinks & Roses",
-    "hex": "#FC8EAC",
-    "translation_key": "item.chromaturgy.flamingo_dye",
-    "custom_texture": false
-  },
-  {
     "id": "fuchsia",
-    "display_family": "Pinks & Roses",
     "hex": "#FF00FF",
     "translation_key": "item.chromaturgy.fuchsia_dye",
     "custom_texture": false
   },
   {
-    "id": "blush",
-    "display_family": "Pinks & Roses",
-    "hex": "#DE5D83",
-    "translation_key": "item.chromaturgy.blush_dye",
+    "id": "rose",
+    "hex": "#FF007F",
+    "translation_key": "item.chromaturgy.rose_dye",
     "custom_texture": false
   },
   {
-    "id": "watermelon",
-    "display_family": "Pinks & Roses",
-    "hex": "#FC6C85",
-    "translation_key": "item.chromaturgy.watermelon_dye",
+    "id": "ultramarine",
+    "hex": "#3F00FF",
+    "translation_key": "item.chromaturgy.ultramarine_dye",
     "custom_texture": false
   },
   {
-    "id": "bubblegum",
-    "display_family": "Pinks & Roses",
-    "hex": "#FFC1CC",
-    "translation_key": "item.chromaturgy.bubblegum_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "raspberry",
-    "display_family": "Pinks & Roses",
-    "hex": "#E30B5C",
-    "translation_key": "item.chromaturgy.raspberry_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "magenta_rose",
-    "display_family": "Pinks & Roses",
-    "hex": "#FF66CC",
-    "translation_key": "item.chromaturgy.magenta_rose_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "amber",
-    "display_family": "Oranges & Browns",
-    "hex": "#FFBF00",
-    "translation_key": "item.chromaturgy.amber_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "tangerine",
-    "display_family": "Oranges & Browns",
-    "hex": "#F28500",
-    "translation_key": "item.chromaturgy.tangerine_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "burnt_orange",
-    "display_family": "Oranges & Browns",
-    "hex": "#CC5500",
-    "translation_key": "item.chromaturgy.burnt_orange_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "rust",
-    "display_family": "Oranges & Browns",
-    "hex": "#B7410E",
-    "translation_key": "item.chromaturgy.rust_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "terracotta_orange",
-    "display_family": "Oranges & Browns",
-    "hex": "#E2725B",
-    "translation_key": "item.chromaturgy.terracotta_orange_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "copper",
-    "display_family": "Oranges & Browns",
-    "hex": "#B87333",
-    "translation_key": "item.chromaturgy.copper_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "sienna",
-    "display_family": "Oranges & Browns",
-    "hex": "#A0522D",
-    "translation_key": "item.chromaturgy.sienna_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "umber",
-    "display_family": "Oranges & Browns",
-    "hex": "#635147",
-    "translation_key": "item.chromaturgy.umber_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "mahogany",
-    "display_family": "Oranges & Browns",
-    "hex": "#4E2728",
-    "translation_key": "item.chromaturgy.mahogany_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "chestnut",
-    "display_family": "Oranges & Browns",
-    "hex": "#954535",
-    "translation_key": "item.chromaturgy.chestnut_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "maroon",
-    "display_family": "Oranges & Browns",
-    "hex": "#800000",
-    "translation_key": "item.chromaturgy.maroon_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "chocolate",
-    "display_family": "Oranges & Browns",
-    "hex": "#7B3F00",
-    "translation_key": "item.chromaturgy.chocolate_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "caramel",
-    "display_family": "Oranges & Browns",
-    "hex": "#AF6E4D",
-    "translation_key": "item.chromaturgy.caramel_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "tan",
-    "display_family": "Oranges & Browns",
-    "hex": "#D2B48C",
-    "translation_key": "item.chromaturgy.tan_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "beige",
-    "display_family": "Oranges & Browns",
-    "hex": "#F5F5DC",
-    "translation_key": "item.chromaturgy.beige_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "cream",
-    "display_family": "Oranges & Browns",
-    "hex": "#FFFDD0",
-    "translation_key": "item.chromaturgy.cream_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "sand",
-    "display_family": "Oranges & Browns",
-    "hex": "#C2B280",
-    "translation_key": "item.chromaturgy.sand_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "khaki",
-    "display_family": "Oranges & Browns",
-    "hex": "#C3B091",
-    "translation_key": "item.chromaturgy.khaki_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "banana",
-    "display_family": "Yellows & Golds",
-    "hex": "#FFE135",
-    "translation_key": "item.chromaturgy.banana_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "gold",
-    "display_family": "Yellows & Golds",
-    "hex": "#FFD700",
-    "translation_key": "item.chromaturgy.gold_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "mustard",
-    "display_family": "Yellows & Golds",
-    "hex": "#FFDB58",
-    "translation_key": "item.chromaturgy.mustard_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "saffron",
-    "display_family": "Yellows & Golds",
-    "hex": "#F4C430",
-    "translation_key": "item.chromaturgy.saffron_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "lemon",
-    "display_family": "Yellows & Golds",
-    "hex": "#FFF44F",
-    "translation_key": "item.chromaturgy.lemon_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "honey",
-    "display_family": "Yellows & Golds",
-    "hex": "#EBA937",
-    "translation_key": "item.chromaturgy.honey_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "wheat",
-    "display_family": "Yellows & Golds",
-    "hex": "#F5DEB3",
-    "translation_key": "item.chromaturgy.wheat_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "canary",
-    "display_family": "Yellows & Golds",
-    "hex": "#FFFF99",
-    "translation_key": "item.chromaturgy.canary_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "marigold",
-    "display_family": "Yellows & Golds",
-    "hex": "#EAA221",
-    "translation_key": "item.chromaturgy.marigold_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "ochre",
-    "display_family": "Yellows & Golds",
-    "hex": "#CC7722",
-    "translation_key": "item.chromaturgy.ochre_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "emerald",
-    "display_family": "Greens",
-    "hex": "#50C878",
-    "translation_key": "item.chromaturgy.emerald_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "jade",
-    "display_family": "Greens",
-    "hex": "#00A86B",
-    "translation_key": "item.chromaturgy.jade_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "forest",
-    "display_family": "Greens",
-    "hex": "#228B22",
-    "translation_key": "item.chromaturgy.forest_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "olive",
-    "display_family": "Greens",
-    "hex": "#808000",
-    "translation_key": "item.chromaturgy.olive_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "mint",
-    "display_family": "Greens",
-    "hex": "#3EB489",
-    "translation_key": "item.chromaturgy.mint_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "sage",
-    "display_family": "Greens",
-    "hex": "#9CAF88",
-    "translation_key": "item.chromaturgy.sage_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "pine",
-    "display_family": "Greens",
-    "hex": "#01796F",
-    "translation_key": "item.chromaturgy.pine_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "moss",
-    "display_family": "Greens",
-    "hex": "#8A9A5B",
-    "translation_key": "item.chromaturgy.moss_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "chartreuse",
-    "display_family": "Greens",
-    "hex": "#DFFF00",
-    "translation_key": "item.chromaturgy.chartreuse_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "hunter_green",
-    "display_family": "Greens",
-    "hex": "#355E3B",
-    "translation_key": "item.chromaturgy.hunter_green_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "seafoam",
-    "display_family": "Greens",
-    "hex": "#93E9BE",
-    "translation_key": "item.chromaturgy.seafoam_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "avocado",
-    "display_family": "Greens",
-    "hex": "#568203",
-    "translation_key": "item.chromaturgy.avocado_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "fern",
-    "display_family": "Greens",
-    "hex": "#4F7942",
-    "translation_key": "item.chromaturgy.fern_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "shamrock",
-    "display_family": "Greens",
-    "hex": "#009E60",
-    "translation_key": "item.chromaturgy.shamrock_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "teal",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#008080",
-    "translation_key": "item.chromaturgy.teal_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "turquoise",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#40E0D0",
-    "translation_key": "item.chromaturgy.turquoise_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "aquamarine",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#7FFFD4",
-    "translation_key": "item.chromaturgy.aquamarine_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "cerulean",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#007BA7",
-    "translation_key": "item.chromaturgy.cerulean_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "sapphire",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#0F52BA",
-    "translation_key": "item.chromaturgy.sapphire_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "cobalt",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#0047AB",
-    "translation_key": "item.chromaturgy.cobalt_dye",
+    "id": "electric_blue",
+    "hex": "#7DF9FF",
+    "translation_key": "item.chromaturgy.electric_blue_dye",
     "custom_texture": false
   },
   {
     "id": "navy",
-    "display_family": "Teals, Cyans & Blues",
     "hex": "#000080",
     "translation_key": "item.chromaturgy.navy_dye",
     "custom_texture": false
   },
   {
+    "id": "canary",
+    "hex": "#FFFF99",
+    "translation_key": "item.chromaturgy.canary_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "malachite",
+    "hex": "#0BDA51",
+    "translation_key": "item.chromaturgy.malachite_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "candy_apple",
+    "hex": "#FF0800",
+    "translation_key": "item.chromaturgy.candy_apple_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "terracotta",
+    "hex": "#CC6666",
+    "translation_key": "item.chromaturgy.terracotta_dye",
+    "custom_texture": false
+  },
+  {
     "id": "azure",
-    "display_family": "Teals, Cyans & Blues",
     "hex": "#007FFF",
     "translation_key": "item.chromaturgy.azure_dye",
     "custom_texture": false
   },
   {
+    "id": "blood_red",
+    "hex": "#660000",
+    "translation_key": "item.chromaturgy.blood_red_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "mauve",
+    "hex": "#E0B0FF",
+    "translation_key": "item.chromaturgy.mauve_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "emerald",
+    "hex": "#50C878",
+    "translation_key": "item.chromaturgy.emerald_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "violet",
+    "hex": "#8F00FF",
+    "translation_key": "item.chromaturgy.violet_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "pastel_green",
+    "hex": "#B0E57C",
+    "translation_key": "item.chromaturgy.pastel_green_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "chartreuse",
+    "hex": "#DFFF00",
+    "translation_key": "item.chromaturgy.chartreuse_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "indigo",
+    "hex": "#4B0082",
+    "translation_key": "item.chromaturgy.indigo_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "mint_cream",
+    "hex": "#C1FFC1",
+    "translation_key": "item.chromaturgy.mint_cream_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "fawn",
+    "hex": "#E5AA70",
+    "translation_key": "item.chromaturgy.fawn_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "royal_blue",
+    "hex": "#4169E1",
+    "translation_key": "item.chromaturgy.royal_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "amber",
+    "hex": "#FFBF00",
+    "translation_key": "item.chromaturgy.amber_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "moss",
+    "hex": "#8A9A5B",
+    "translation_key": "item.chromaturgy.moss_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "forest",
+    "hex": "#228B22",
+    "translation_key": "item.chromaturgy.forest_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "shamrock",
+    "hex": "#009E60",
+    "translation_key": "item.chromaturgy.shamrock_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "bubblegum",
+    "hex": "#FFC1CC",
+    "translation_key": "item.chromaturgy.bubblegum_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "burnt_orange",
+    "hex": "#CC5500",
+    "translation_key": "item.chromaturgy.burnt_orange_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "heliotrope",
+    "hex": "#DF73FF",
+    "translation_key": "item.chromaturgy.heliotrope_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cobalt",
+    "hex": "#0047AB",
+    "translation_key": "item.chromaturgy.cobalt_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "byzantium",
+    "hex": "#702963",
+    "translation_key": "item.chromaturgy.byzantium_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "viridian",
+    "hex": "#40826D",
+    "translation_key": "item.chromaturgy.viridian_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "lilac",
+    "hex": "#C8A2C8",
+    "translation_key": "item.chromaturgy.lilac_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "vermilion",
+    "hex": "#E34234",
+    "translation_key": "item.chromaturgy.vermilion_dye",
+    "custom_texture": true
+  },
+  {
+    "id": "copper",
+    "hex": "#B87333",
+    "translation_key": "item.chromaturgy.copper_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cornflower",
+    "hex": "#6495ED",
+    "translation_key": "item.chromaturgy.cornflower_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "chocolate",
+    "hex": "#7B3F00",
+    "translation_key": "item.chromaturgy.chocolate_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cyan_dusk",
+    "hex": "#4C9F9F",
+    "translation_key": "item.chromaturgy.cyan_dusk_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "amethyst",
+    "hex": "#9966CC",
+    "translation_key": "item.chromaturgy.amethyst_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "kelly_green",
+    "hex": "#4CBB17",
+    "translation_key": "item.chromaturgy.kelly_green_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "carmine",
+    "hex": "#960018",
+    "translation_key": "item.chromaturgy.carmine_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "plum",
+    "hex": "#8E4585",
+    "translation_key": "item.chromaturgy.plum_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "magenta_rose",
+    "hex": "#FF66CC",
+    "translation_key": "item.chromaturgy.magenta_rose_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "coral",
+    "hex": "#FF7F50",
+    "translation_key": "item.chromaturgy.coral_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "powder_blue",
+    "hex": "#B0E0E6",
+    "translation_key": "item.chromaturgy.powder_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "honey",
+    "hex": "#EBA937",
+    "translation_key": "item.chromaturgy.honey_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "mahogany",
+    "hex": "#4E2728",
+    "translation_key": "item.chromaturgy.mahogany_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cherry",
+    "hex": "#DE3163",
+    "translation_key": "item.chromaturgy.cherry_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "seafoam",
+    "hex": "#93E9BE",
+    "translation_key": "item.chromaturgy.seafoam_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "slate",
+    "hex": "#708090",
+    "translation_key": "item.chromaturgy.slate_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "watermelon",
+    "hex": "#FC6C85",
+    "translation_key": "item.chromaturgy.watermelon_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "slate_blue",
+    "hex": "#6A5ACD",
+    "translation_key": "item.chromaturgy.slate_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "crimson",
+    "hex": "#DC143C",
+    "translation_key": "item.chromaturgy.crimson_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "mulberry",
+    "hex": "#C54B8C",
+    "translation_key": "item.chromaturgy.mulberry_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "turquoise",
+    "hex": "#40E0D0",
+    "translation_key": "item.chromaturgy.turquoise_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cream",
+    "hex": "#FFFDD0",
+    "translation_key": "item.chromaturgy.cream_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "fern",
+    "hex": "#4F7942",
+    "translation_key": "item.chromaturgy.fern_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "flax",
+    "hex": "#EEDC82",
+    "translation_key": "item.chromaturgy.flax_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "sky_blue",
+    "hex": "#87CEEB",
+    "translation_key": "item.chromaturgy.sky_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "teal",
+    "hex": "#008080",
+    "translation_key": "item.chromaturgy.teal_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "khaki",
+    "hex": "#C3B091",
+    "translation_key": "item.chromaturgy.khaki_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "olive",
+    "hex": "#808000",
+    "translation_key": "item.chromaturgy.olive_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "ash",
+    "hex": "#B2BEB5",
+    "translation_key": "item.chromaturgy.ash_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "wine",
+    "hex": "#722F37",
+    "translation_key": "item.chromaturgy.wine_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "orchid",
+    "hex": "#DA70D6",
+    "translation_key": "item.chromaturgy.orchid_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "wheat",
+    "hex": "#F5DEB3",
+    "translation_key": "item.chromaturgy.wheat_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "dusty_rose",
+    "hex": "#C08081",
+    "translation_key": "item.chromaturgy.dusty_rose_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cerulean",
+    "hex": "#007BA7",
+    "translation_key": "item.chromaturgy.cerulean_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "midnight_blue",
+    "hex": "#191970",
+    "translation_key": "item.chromaturgy.midnight_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "royal_purple",
+    "hex": "#7851A9",
+    "translation_key": "item.chromaturgy.royal_purple_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "denim",
+    "hex": "#1560BD",
+    "translation_key": "item.chromaturgy.denim_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "aquamarine",
+    "hex": "#7FFFD4",
+    "translation_key": "item.chromaturgy.aquamarine_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "lilac_mist",
+    "hex": "#D8BFD8",
+    "translation_key": "item.chromaturgy.lilac_mist_dye",
+    "custom_texture": false
+  },
+  {
     "id": "steel_blue",
-    "display_family": "Teals, Cyans & Blues",
     "hex": "#4682B4",
     "translation_key": "item.chromaturgy.steel_blue_dye",
     "custom_texture": false
   },
   {
     "id": "periwinkle",
-    "display_family": "Teals, Cyans & Blues",
     "hex": "#CCCCFF",
     "translation_key": "item.chromaturgy.periwinkle_dye",
     "custom_texture": false
   },
   {
-    "id": "denim",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#1560BD",
-    "translation_key": "item.chromaturgy.denim_dye",
+    "id": "raspberry",
+    "hex": "#E30B5C",
+    "translation_key": "item.chromaturgy.raspberry_dye",
     "custom_texture": false
   },
   {
-    "id": "midnight_blue",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#191970",
-    "translation_key": "item.chromaturgy.midnight_blue_dye",
+    "id": "citrine",
+    "hex": "#E4D00A",
+    "translation_key": "item.chromaturgy.citrine_dye",
     "custom_texture": false
   },
   {
-    "id": "ice_blue",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#A5F2F3",
-    "translation_key": "item.chromaturgy.ice_blue_dye",
+    "id": "lemon",
+    "hex": "#FFF44F",
+    "translation_key": "item.chromaturgy.lemon_dye",
     "custom_texture": false
   },
   {
-    "id": "slate_blue",
-    "display_family": "Teals, Cyans & Blues",
-    "hex": "#6A5ACD",
-    "translation_key": "item.chromaturgy.slate_blue_dye",
+    "id": "hunter_green",
+    "hex": "#355E3B",
+    "translation_key": "item.chromaturgy.hunter_green_dye",
     "custom_texture": false
   },
   {
-    "id": "indigo",
-    "display_family": "Purples & Violets",
-    "hex": "#4B0082",
-    "translation_key": "item.chromaturgy.indigo_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "lavender",
-    "display_family": "Purples & Violets",
-    "hex": "#E6E6FA",
-    "translation_key": "item.chromaturgy.lavender_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "amethyst",
-    "display_family": "Purples & Violets",
-    "hex": "#9966CC",
-    "translation_key": "item.chromaturgy.amethyst_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "violet",
-    "display_family": "Purples & Violets",
-    "hex": "#8F00FF",
-    "translation_key": "item.chromaturgy.violet_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "plum",
-    "display_family": "Purples & Violets",
-    "hex": "#8E4585",
-    "translation_key": "item.chromaturgy.plum_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "lilac",
-    "display_family": "Purples & Violets",
-    "hex": "#C8A2C8",
-    "translation_key": "item.chromaturgy.lilac_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "mauve",
-    "display_family": "Purples & Violets",
-    "hex": "#E0B0FF",
-    "translation_key": "item.chromaturgy.mauve_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "eggplant",
-    "display_family": "Purples & Violets",
-    "hex": "#614051",
-    "translation_key": "item.chromaturgy.eggplant_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "orchid",
-    "display_family": "Purples & Violets",
-    "hex": "#DA70D6",
-    "translation_key": "item.chromaturgy.orchid_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "royal_purple",
-    "display_family": "Purples & Violets",
-    "hex": "#7851A9",
-    "translation_key": "item.chromaturgy.royal_purple_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "grape",
-    "display_family": "Purples & Violets",
-    "hex": "#6F2DA8",
-    "translation_key": "item.chromaturgy.grape_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "charcoal",
-    "display_family": "Neutrals & Earth",
-    "hex": "#36454F",
-    "translation_key": "item.chromaturgy.charcoal_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "slate",
-    "display_family": "Neutrals & Earth",
-    "hex": "#708090",
-    "translation_key": "item.chromaturgy.slate_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "ash",
-    "display_family": "Neutrals & Earth",
-    "hex": "#B2BEB5",
-    "translation_key": "item.chromaturgy.ash_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "ivory",
-    "display_family": "Neutrals & Earth",
-    "hex": "#FFFFF0",
-    "translation_key": "item.chromaturgy.ivory_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "pearl",
-    "display_family": "Neutrals & Earth",
-    "hex": "#F0EAD6",
-    "translation_key": "item.chromaturgy.pearl_dye",
+    "id": "blush",
+    "hex": "#DE5D83",
+    "translation_key": "item.chromaturgy.blush_dye",
     "custom_texture": false
   },
   {
     "id": "graphite",
-    "display_family": "Neutrals & Earth",
     "hex": "#383838",
     "translation_key": "item.chromaturgy.graphite_dye",
     "custom_texture": false
   },
   {
-    "id": "clay",
-    "display_family": "Neutrals & Earth",
-    "hex": "#B66A50",
-    "translation_key": "item.chromaturgy.clay_dye",
+    "id": "mint",
+    "hex": "#3EB489",
+    "translation_key": "item.chromaturgy.mint_dye",
     "custom_texture": false
   },
   {
-    "id": "stone_gray",
-    "display_family": "Neutrals & Earth",
-    "hex": "#928E85",
-    "translation_key": "item.chromaturgy.stone_gray_dye",
+    "id": "punch",
+    "hex": "#DC4D51",
+    "translation_key": "item.chromaturgy.punch_dye",
     "custom_texture": false
   },
   {
-    "id": "obsidian",
-    "display_family": "Neutrals & Earth",
-    "hex": "#0B0B0B",
-    "translation_key": "item.chromaturgy.obsidian_dye",
+    "id": "lavender",
+    "hex": "#E6E6FA",
+    "translation_key": "item.chromaturgy.lavender_dye",
     "custom_texture": false
   },
   {
-    "id": "bone",
-    "display_family": "Neutrals & Earth",
-    "hex": "#E3DAC9",
-    "translation_key": "item.chromaturgy.bone_dye",
-    "custom_texture": false
-  },
-  {
-    "id": "taupe",
-    "display_family": "Neutrals & Earth",
-    "hex": "#483C32",
-    "translation_key": "item.chromaturgy.taupe_dye",
+    "id": "rust",
+    "hex": "#B7410E",
+    "translation_key": "item.chromaturgy.rust_dye",
     "custom_texture": false
   },
   {
     "id": "driftwood",
-    "display_family": "Neutrals & Earth",
     "hex": "#AF9A7D",
     "translation_key": "item.chromaturgy.driftwood_dye",
     "custom_texture": false
   },
   {
-    "id": "cotton_candy",
-    "display_family": "Pastels",
-    "hex": "#FFBCD9",
-    "translation_key": "item.chromaturgy.cotton_candy_dye",
+    "id": "grape",
+    "hex": "#6F2DA8",
+    "translation_key": "item.chromaturgy.grape_dye",
     "custom_texture": false
   },
   {
-    "id": "baby_blue",
-    "display_family": "Pastels",
-    "hex": "#89CFF0",
-    "translation_key": "item.chromaturgy.baby_blue_dye",
+    "id": "clay_brown",
+    "hex": "#B66A50",
+    "translation_key": "item.chromaturgy.clay_brown_dye",
     "custom_texture": false
   },
   {
-    "id": "mint_cream",
-    "display_family": "Pastels",
-    "hex": "#C1FFC1",
-    "translation_key": "item.chromaturgy.mint_cream_dye",
+    "id": "tangerine",
+    "hex": "#F28500",
+    "translation_key": "item.chromaturgy.tangerine_dye",
     "custom_texture": false
   },
   {
-    "id": "pastel_yellow",
-    "display_family": "Pastels",
-    "hex": "#FDFD96",
-    "translation_key": "item.chromaturgy.pastel_yellow_dye",
+    "id": "umber",
+    "hex": "#635147",
+    "translation_key": "item.chromaturgy.umber_dye",
     "custom_texture": false
   },
   {
-    "id": "peach",
-    "display_family": "Pastels",
-    "hex": "#FFE5B4",
-    "translation_key": "item.chromaturgy.peach_dye",
+    "id": "sienna",
+    "hex": "#A0522D",
+    "translation_key": "item.chromaturgy.sienna_dye",
     "custom_texture": false
   },
   {
-    "id": "powder_pink",
-    "display_family": "Pastels",
-    "hex": "#FFD1DC",
-    "translation_key": "item.chromaturgy.powder_pink_dye",
+    "id": "goldenrod",
+    "hex": "#DAA520",
+    "translation_key": "item.chromaturgy.goldenrod_dye",
     "custom_texture": false
   },
   {
-    "id": "lilac_mist",
-    "display_family": "Pastels",
-    "hex": "#D8BFD8",
-    "translation_key": "item.chromaturgy.lilac_mist_dye",
+    "id": "bone",
+    "hex": "#E3DAC9",
+    "translation_key": "item.chromaturgy.bone_dye",
     "custom_texture": false
   },
   {
-    "id": "seaglass",
-    "display_family": "Pastels",
-    "hex": "#B2D8D8",
-    "translation_key": "item.chromaturgy.seaglass_dye",
+    "id": "scarlet",
+    "hex": "#FF2400",
+    "translation_key": "item.chromaturgy.scarlet_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "salmon",
+    "hex": "#FA8072",
+    "translation_key": "item.chromaturgy.salmon_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "terracotta_orange",
+    "hex": "#E2725B",
+    "translation_key": "item.chromaturgy.terracotta_orange_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "carnation",
+    "hex": "#FFA6C9",
+    "translation_key": "item.chromaturgy.carnation_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "sunflower",
+    "hex": "#FFDA03",
+    "translation_key": "item.chromaturgy.sunflower_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "mustard",
+    "hex": "#FFDB58",
+    "translation_key": "item.chromaturgy.mustard_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "ochre",
+    "hex": "#CC7722",
+    "translation_key": "item.chromaturgy.ochre_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "cardinal",
+    "hex": "#C41E3A",
+    "translation_key": "item.chromaturgy.cardinal_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "maroon",
+    "hex": "#800000",
+    "translation_key": "item.chromaturgy.maroon_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "stone_gray",
+    "hex": "#928E85",
+    "translation_key": "item.chromaturgy.stone_gray_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "saffron",
+    "hex": "#F4C430",
+    "translation_key": "item.chromaturgy.saffron_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "ice_blue",
+    "hex": "#A5F2F3",
+    "translation_key": "item.chromaturgy.ice_blue_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "pearl",
+    "hex": "#F0EAD6",
+    "translation_key": "item.chromaturgy.pearl_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "hot_pink",
+    "hex": "#FF69B4",
+    "translation_key": "item.chromaturgy.hot_pink_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "sage",
+    "hex": "#9CAF88",
+    "translation_key": "item.chromaturgy.sage_dye",
+    "custom_texture": false
+  },
+  {
+    "id": "burgundy",
+    "hex": "#800020",
+    "translation_key": "item.chromaturgy.burgundy_dye",
     "custom_texture": false
   }
 ]
