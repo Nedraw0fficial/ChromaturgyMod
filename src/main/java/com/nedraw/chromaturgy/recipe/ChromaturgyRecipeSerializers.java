@@ -21,6 +21,16 @@ public final class ChromaturgyRecipeSerializers {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableWoolRecipe>> DYEABLE_WOOL =
             RECIPE_SERIALIZERS.register("dyeable_wool", () -> DyeableWoolRecipe.SERIALIZER);
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableCarpetRecipe>> DYEABLE_CARPET =
+            RECIPE_SERIALIZERS.register("dyeable_carpet", () -> DyeableCarpetRecipe.SERIALIZER);
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<WoolToCarpetRecipe>> WOOL_TO_CARPET =
+            RECIPE_SERIALIZERS.register("wool_to_carpet", () -> WoolToCarpetRecipe.SERIALIZER);
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableTerracottaRecipe>> DYEABLE_TERRACOTTA =
+            RECIPE_SERIALIZERS.register("dyeable_terracotta", () -> DyeableTerracottaRecipe.SERIALIZER);
+
+
     private ChromaturgyRecipeSerializers() {}
 
     public static void register(IEventBus modEventBus) {

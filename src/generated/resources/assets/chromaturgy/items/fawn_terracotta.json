@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/fawn_terracotta",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -3169932
+      }
+    ]
+  }
+}

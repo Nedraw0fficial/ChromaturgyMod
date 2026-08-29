@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/amethyst_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -6723892
+      }
+    ]
+  }
+}

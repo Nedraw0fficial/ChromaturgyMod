@@ -46,6 +46,15 @@ public final class ColorLookup {
         return ITEM_TO_HEX;
     }
 
+    public static int mutedForTerracotta(int hex) {
+        int r = (hex >> 16) & 0xFF, g = (hex >> 8) & 0xFF, b = hex & 0xFF;
+        float[] hsl = rgbToHsl(r, g, b);
+        float mutedSat = hsl[1] * 0.7f;
+        float mutedLight = hsl[2] + (0.55f - hsl[2]) * 0.3f;
+        int[] rgb = hslToRgb(hsl[0], mutedSat, mutedLight);
+        return (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
+    }
+
     public static float[] rgbToHsl(int r, int g, int b) {
         float rf = r / 255f, gf = g / 255f, bf = b / 255f;
         float max = Math.max(rf, Math.max(gf, bf));

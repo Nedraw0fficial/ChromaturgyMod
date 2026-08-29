@@ -78,6 +78,20 @@ public final class ChromaturgyCreativeTabs {
                                 count[0]++;
                             }
                         });
+
+                        section.accept(Component.translatable("itemGroup.chromaturgy.carpet"), () -> {
+                            for (var color : ColorDefinitions.all()) {
+                                output.accept(ChromaturgyCarpetBlocks.getCarpet(color.id()).get().asItem());
+                                count[0]++;
+                            }
+                        });
+
+                        section.accept(Component.translatable("itemGroup.chromaturgy.terracotta"), () -> {
+                            for (var color : ColorDefinitions.all()) {
+                                output.accept(ChromaturgyTerracottaBlocks.getTerracotta(color.id()).get().asItem());
+                                count[0]++;
+                            }
+                        });
                     })
                     .build());
 

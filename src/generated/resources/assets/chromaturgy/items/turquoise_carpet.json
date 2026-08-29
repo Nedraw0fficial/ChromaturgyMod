@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/turquoise_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -12525360
+      }
+    ]
+  }
+}

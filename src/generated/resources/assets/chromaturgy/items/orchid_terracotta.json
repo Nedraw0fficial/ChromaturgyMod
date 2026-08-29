@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/orchid_terracotta",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -3770941
+      }
+    ]
+  }
+}

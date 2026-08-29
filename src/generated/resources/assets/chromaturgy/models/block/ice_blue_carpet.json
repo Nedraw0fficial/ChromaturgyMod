@@ -1,0 +1,6 @@
+{
+  "parent": "chromaturgy:block/tinted_carpet",
+  "textures": {
+    "wool": "chromaturgy:block/wool_template"
+  }
+}

@@ -1,8 +1,11 @@
 package com.nedraw.chromaturgy;
 
-import com.nedraw.chromaturgy.datagen.ChromaturgyModelProvider;
+import com.nedraw.chromaturgy.datagen.*;
 import com.nedraw.chromaturgy.menu.PigmentStationScreen;
+import com.nedraw.chromaturgy.registry.*;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
@@ -13,18 +16,13 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
-import com.nedraw.chromaturgy.registry.ChromaturgyItems;
-import com.nedraw.chromaturgy.registry.ChromaturgyBlocks;
-import com.nedraw.chromaturgy.registry.ColorDefinitions;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import com.nedraw.chromaturgy.registry.ChromaturgyCreativeTabs;
-import com.nedraw.chromaturgy.datagen.ChromaturgyItemTagsProvider;
 import com.nedraw.chromaturgy.menu.ChromaturgyMenuTypes;
 import com.nedraw.chromaturgy.recipe.ChromaturgyRecipeSerializers;
-import com.nedraw.chromaturgy.registry.ChromaturgyWoolBlocks;
-import com.nedraw.chromaturgy.datagen.ChromaturgyBlockColors;
 import net.neoforged.neoforge.client.event.ScreenEvent;
-import com.nedraw.chromaturgy.datagen.ChromaturgySectionOverlay;
+
+import java.util.List;
+import java.util.Set;
 
 @Mod(Chromaturgy.MODID)
 public class Chromaturgy {
@@ -39,6 +37,8 @@ public class Chromaturgy {
         ChromaturgyItems.register(modEventBus);
         ChromaturgyBlocks.register(modEventBus);
         ChromaturgyWoolBlocks.register(modEventBus);
+        ChromaturgyCarpetBlocks.register(modEventBus);
+        ChromaturgyTerracottaBlocks.register(modEventBus);
         ChromaturgyCreativeTabs.register(modEventBus);
         ChromaturgyMenuTypes.register(modEventBus);
         ChromaturgyRecipeSerializers.register(modEventBus);
@@ -54,6 +54,14 @@ public class Chromaturgy {
             event.createProvider(ChromaturgyModelProvider::new);
             event.createProvider((PackOutput output) ->
                     new ChromaturgyItemTagsProvider(output, event.getLookupProvider()));
+            event.createProvider((PackOutput output) ->
+                    new LootTableProvider(output, Set.of(),
+                            List.of(new LootTableProvider.SubProviderEntry(
+                                    ChromaturgyBlockLootProvider::new,
+                                    LootContextParamSets.BLOCK)),
+                            event.getLookupProvider()));
+            event.createProvider((PackOutput output) ->
+                    new ChromaturgyBlockTagsProvider(output, event.getLookupProvider()));
         });
     }
 

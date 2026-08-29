@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/mulberry_terracotta",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -4956276
+      }
+    ]
+  }
+}

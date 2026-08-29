@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/graphite_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -13092808
+      }
+    ]
+  }
+}

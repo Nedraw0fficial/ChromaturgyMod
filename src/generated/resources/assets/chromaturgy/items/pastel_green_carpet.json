@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/pastel_green_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -5184132
+      }
+    ]
+  }
+}

@@ -2,9 +2,7 @@ package com.nedraw.chromaturgy.datagen;
 
 import com.nedraw.chromaturgy.Chromaturgy;
 import com.nedraw.chromaturgy.ChromaturgyDyeColor;
-import com.nedraw.chromaturgy.registry.ChromaturgyItems;
-import com.nedraw.chromaturgy.registry.ChromaturgyWoolBlocks;
-import com.nedraw.chromaturgy.registry.ColorDefinitions;
+import com.nedraw.chromaturgy.registry.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
@@ -24,6 +22,8 @@ public class ChromaturgyItemTagsProvider extends ItemTagsProvider {
         for (ChromaturgyDyeColor color : ColorDefinitions.all()) {
             tag(ItemTags.DYES).add(ChromaturgyItems.getDye(color.id()).get());
             tag(ItemTags.WOOL).add(ChromaturgyWoolBlocks.getWool(color.id()).get().asItem());
+            tag(ItemTags.WOOL_CARPETS).add(ChromaturgyCarpetBlocks.getCarpet(color.id()).get().asItem());
+            tag(ItemTags.TERRACOTTA).add(ChromaturgyTerracottaBlocks.getTerracotta(color.id()).get().asItem());
         }
     }
 }

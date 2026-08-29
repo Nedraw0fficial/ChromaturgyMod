@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/olive_terracotta",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -7039974
+      }
+    ]
+  }
+}

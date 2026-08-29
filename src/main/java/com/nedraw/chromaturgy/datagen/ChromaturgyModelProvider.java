@@ -2,10 +2,8 @@ package com.nedraw.chromaturgy.datagen;
 
 import com.nedraw.chromaturgy.Chromaturgy;
 import com.nedraw.chromaturgy.ChromaturgyDyeColor;
-import com.nedraw.chromaturgy.registry.ChromaturgyBlocks;
-import com.nedraw.chromaturgy.registry.ChromaturgyItems;
-import com.nedraw.chromaturgy.registry.ChromaturgyWoolBlocks;
-import com.nedraw.chromaturgy.registry.ColorDefinitions;
+import com.nedraw.chromaturgy.menu.ColorLookup;
+import com.nedraw.chromaturgy.registry.*;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -35,6 +33,8 @@ public class ChromaturgyModelProvider extends ModelProvider {
             TextureSlot.ALL
     );
 
+    private static final TextureSlot WOOL_SLOT = TextureSlot.create("wool");
+
     public ChromaturgyModelProvider(PackOutput output) {
         super(output, Chromaturgy.MODID);
     }
@@ -62,6 +62,12 @@ public class ChromaturgyModelProvider extends ModelProvider {
                 .put(TextureSlot.LAYER0, new Material(Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "item/swatch_card")));
         Identifier swatchCardModel = ModelTemplates.FLAT_ITEM.create(swatchCard, swatchCardMapping, itemModels.modelOutput);
         itemModels.itemModelOutput.accept(swatchCard, ItemModelUtils.plainModel(swatchCardModel));
+
+        Item sectionFiller = ChromaturgyItems.SECTION_FILLER.get();
+        TextureMapping sectionFillerMapping = new TextureMapping()
+                .put(TextureSlot.LAYER0, new Material(Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "item/section_filler")));
+        Identifier sectionFillerModel = ModelTemplates.FLAT_ITEM.create(sectionFiller, sectionFillerMapping, itemModels.modelOutput);
+        itemModels.itemModelOutput.accept(sectionFiller, ItemModelUtils.plainModel(sectionFillerModel));
 
         blockModels.registerSimpleItemModel(pigmentStation, pigmentStationModel);
         for (ChromaturgyDyeColor color : ColorDefinitions.all()) {
@@ -112,6 +118,48 @@ public class ChromaturgyModelProvider extends ModelProvider {
             );
 
             blockModels.registerSimpleTintedItemModel(woolBlock, woolModel, ItemModelUtils.constantTint(0xFF000000 | color.hex()));
+        }
+
+        Identifier carpetTemplate = Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "block/tinted_carpet");
+
+        for (ChromaturgyDyeColor color : ColorDefinitions.all()) {
+            Block carpetBlock = ChromaturgyCarpetBlocks.getCarpet(color.id()).get();
+
+            ModelTemplate carpetModelTemplate = new ModelTemplate(
+                    Optional.of(carpetTemplate),
+                    Optional.empty(),
+                    WOOL_SLOT
+            );
+
+            Identifier carpetModel = carpetModelTemplate.create(
+                    carpetBlock,
+                    new TextureMapping().put(WOOL_SLOT, new Material(vanillaWoolTexture)),
+                    blockModels.modelOutput
+            );
+
+            blockModels.blockStateOutput.accept(
+                    BlockModelGenerators.createSimpleBlock(carpetBlock, BlockModelGenerators.plainVariant(carpetModel))
+            );
+
+            blockModels.registerSimpleTintedItemModel(carpetBlock, carpetModel, ItemModelUtils.constantTint(0xFF000000 | color.hex()));
+        }
+
+        Identifier terracottaTexture = Identifier.fromNamespaceAndPath(Chromaturgy.MODID, "block/terracotta_template");
+
+        for (ChromaturgyDyeColor color : ColorDefinitions.all()) {
+            Block terracottaBlock = ChromaturgyTerracottaBlocks.getTerracotta(color.id()).get();
+
+            Identifier terracottaModel = TINTED_CUBE_ALL.create(
+                    terracottaBlock,
+                    new TextureMapping().put(TextureSlot.ALL, new Material(terracottaTexture)),
+                    blockModels.modelOutput
+            );
+
+            blockModels.blockStateOutput.accept(
+                    BlockModelGenerators.createSimpleBlock(terracottaBlock, BlockModelGenerators.plainVariant(terracottaModel))
+            );
+            blockModels.registerSimpleTintedItemModel(terracottaBlock, terracottaModel,
+                    ItemModelUtils.constantTint(0xFF000000 | ColorLookup.mutedForTerracotta(color.hex())));
         }
     }
 }

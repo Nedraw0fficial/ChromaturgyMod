@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/cyan_dusk_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -11755617
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -30,7 +31,7 @@ public final class ChromaturgyWoolBlocks {
             String registryName = color.id() + "_wool";
             DeferredBlock<Block> block = BLOCKS.registerSimpleBlock(
                     registryName,
-                    p -> p.mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL).ignitedByLava()
+                    p -> p.mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)
             );
             WOOL_BLOCKS.put(color.id(), block);
             BLOCK_ITEMS.registerSimpleBlockItem(registryName, block);

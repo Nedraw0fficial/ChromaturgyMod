@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/chocolate_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -8700160
+      }
+    ]
+  }
+}

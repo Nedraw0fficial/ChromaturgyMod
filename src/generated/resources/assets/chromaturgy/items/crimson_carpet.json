@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chromaturgy:block/crimson_carpet",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -2354116
+      }
+    ]
+  }
+}
