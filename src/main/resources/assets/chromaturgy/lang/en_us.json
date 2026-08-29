@@ -5,6 +5,10 @@
   "item.chromaturgy.swatch_card": "Swatch Card",
   "gui.chromaturgy.mix": "Mix",
 
+  "itemGroup.chromaturgy.special": "Special",
+  "itemGroup.chromaturgy.dyes": "Dyes",
+  "itemGroup.chromaturgy.wool": "Wool",
+
   "item.chromaturgy.fuchsia_dye": "Fuchsia Dye",
   "item.chromaturgy.rose_dye": "Rose Dye",
   "item.chromaturgy.ultramarine_dye": "Ultramarine Dye",

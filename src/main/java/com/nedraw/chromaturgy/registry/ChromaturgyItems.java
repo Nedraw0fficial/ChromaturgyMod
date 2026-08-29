@@ -18,6 +18,9 @@ public final class ChromaturgyItems {
     public static final DeferredHolder<Item, Item> SWATCH_CARD =
             DYES.registerSimpleItem("swatch_card", p -> p);
 
+    public static final DeferredHolder<Item, Item> SECTION_FILLER =
+            DYES.registerSimpleItem("section_filler", p -> p);
+
     private static final Map<String, DeferredHolder<Item, Item>> DYE_ITEMS = new LinkedHashMap<>();
 
     static {

@@ -34,6 +34,7 @@ public class PigmentStationScreen extends AbstractContainerScreen<PigmentStation
 
     @Override
     public void extractBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+        super.extractBackground(graphics, mouseX, mouseY, partialTick);
         int xo = this.leftPos;
         int yo = this.topPos;
         graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, xo, yo, 0.0F, 0.0F,

@@ -5,6 +5,10 @@
   "item.chromaturgy.swatch_card": "Nuancier",
   "gui.chromaturgy.mix": "Mixer",
 
+  "itemGroup.chromaturgy.special": "Spécial",
+  "itemGroup.chromaturgy.dyes": "Teintures",
+  "itemGroup.chromaturgy.wool": "Laine",
+
   "item.chromaturgy.fuchsia_dye": "Teinture Fuchsia",
   "item.chromaturgy.rose_dye": "Teinture Rose",
   "item.chromaturgy.ultramarine_dye": "Teinture Outremer",
