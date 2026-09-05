@@ -3,6 +3,8 @@
 
   "block.chromaturgy.pigment_station": "Pigment Station",
   "item.chromaturgy.swatch_card": "Swatch Card",
+  "item.chromaturgy.paint_brush": "Paint Brush",
+  "chromaturgy.paint_brush.color_lore": "Color: %s",
   "gui.chromaturgy.mix": "Mix",
 
   "itemGroup.chromaturgy.special": "Special",

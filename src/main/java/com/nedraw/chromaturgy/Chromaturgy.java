@@ -1,11 +1,15 @@
 package com.nedraw.chromaturgy;
 
+import com.nedraw.chromaturgy.block.ChromaturgyBlockEntities;
+import com.nedraw.chromaturgy.block.ChromaturgyPaintedBlockRegistry;
+import com.nedraw.chromaturgy.block.PaintedBlockRenderer;
 import com.nedraw.chromaturgy.datagen.*;
 import com.nedraw.chromaturgy.menu.PigmentStationScreen;
 import com.nedraw.chromaturgy.registry.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
@@ -34,6 +38,7 @@ public class Chromaturgy {
         modEventBus.addListener(this::commonSetup);
 
         ColorDefinitions.load();
+        ChromaturgyDataComponents.register(modEventBus);
         ChromaturgyItems.register(modEventBus);
         ChromaturgyBlocks.register(modEventBus);
         ChromaturgyWoolBlocks.register(modEventBus);
@@ -42,9 +47,14 @@ public class Chromaturgy {
         ChromaturgyCreativeTabs.register(modEventBus);
         ChromaturgyMenuTypes.register(modEventBus);
         ChromaturgyRecipeSerializers.register(modEventBus);
+        ChromaturgyPaintedBlockRegistry.register(modEventBus);
+        ChromaturgyBlockEntities.register(modEventBus);
 
         modEventBus.addListener((RegisterMenuScreensEvent event) ->
                 event.register(ChromaturgyMenuTypes.PIGMENT_STATION.get(), PigmentStationScreen::new));
+
+        modEventBus.addListener((EntityRenderersEvent.RegisterRenderers event) ->
+                event.registerBlockEntityRenderer(ChromaturgyBlockEntities.PAINTED.get(), context -> new PaintedBlockRenderer()));
 
         modEventBus.addListener(ChromaturgyBlockColors::register);
         NeoForge.EVENT_BUS.addListener(ChromaturgySectionOverlay::onItemTooltip);

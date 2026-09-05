@@ -3,6 +3,8 @@
 
   "block.chromaturgy.pigment_station": "Station de Pigmentation",
   "item.chromaturgy.swatch_card": "Nuancier",
+  "item.chromaturgy.paint_brush": "Pinceau",
+  "chromaturgy.paint_brush.color_lore": "Couleur : %s",
   "gui.chromaturgy.mix": "Mixer",
 
   "itemGroup.chromaturgy.special": "Spécial",

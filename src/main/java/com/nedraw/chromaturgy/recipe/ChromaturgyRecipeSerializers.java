@@ -30,6 +30,9 @@ public final class ChromaturgyRecipeSerializers {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<DyeableTerracottaRecipe>> DYEABLE_TERRACOTTA =
             RECIPE_SERIALIZERS.register("dyeable_terracotta", () -> DyeableTerracottaRecipe.SERIALIZER);
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PaintBrushRecipe>> PAINT_BRUSH =
+            RECIPE_SERIALIZERS.register("paint_brush", () -> PaintBrushRecipe.SERIALIZER);
+
 
     private ChromaturgyRecipeSerializers() {}
 

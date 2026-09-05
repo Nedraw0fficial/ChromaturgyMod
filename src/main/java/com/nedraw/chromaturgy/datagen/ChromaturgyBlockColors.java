@@ -1,6 +1,7 @@
 package com.nedraw.chromaturgy.datagen;
 
 import com.nedraw.chromaturgy.ChromaturgyDyeColor;
+import com.nedraw.chromaturgy.block.ChromaturgyPaintedBlockRegistry;
 import com.nedraw.chromaturgy.menu.ColorLookup;
 import com.nedraw.chromaturgy.registry.ChromaturgyCarpetBlocks;
 import com.nedraw.chromaturgy.registry.ChromaturgyTerracottaBlocks;

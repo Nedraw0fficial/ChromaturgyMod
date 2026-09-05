@@ -2,6 +2,7 @@ package com.nedraw.chromaturgy.registry;
 
 import com.nedraw.chromaturgy.Chromaturgy;
 import com.nedraw.chromaturgy.ChromaturgyDyeColor;
+import com.nedraw.chromaturgy.block.PaintBrushItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -20,6 +21,9 @@ public final class ChromaturgyItems {
 
     public static final DeferredHolder<Item, Item> SECTION_FILLER =
             DYES.registerSimpleItem("section_filler", p -> p);
+
+    public static final DeferredHolder<Item, Item> PAINT_BRUSH =
+            DYES.registerItem("paint_brush", PaintBrushItem::new, p -> p.stacksTo(1));
 
     private static final Map<String, DeferredHolder<Item, Item>> DYE_ITEMS = new LinkedHashMap<>();
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chromaturgy:item/paint_brush_base",
+    "layer1": "chromaturgy:item/paint_brush_bristles"
+  }
+}
